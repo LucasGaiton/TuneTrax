@@ -9,6 +9,19 @@ module.exports = (sequelize) => {
             allowNull:false,
             primaryKey:true
         },
+        name:{
+            type: DataTypes.STRING,
+        },
+        email:{
+            type: DataTypes.STRING
+        },
+        password:{
+            type: DataTypes.STRING
+        },
+        photo:{
+            type:DataTypes.STRING
+
+        },
         playLists:{
             type:DataTypes.ARRAY(DataTypes.JSON)
         },

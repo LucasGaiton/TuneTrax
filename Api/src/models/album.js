@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
 
         },
         sogns:{
-            type: DataTypes.ARRAY(DataTypes.INTEGER)
+            type: DataTypes.ARRAY(DataTypes.BLOB)
         },
         artist:{
             type:DataTypes.INTEGER

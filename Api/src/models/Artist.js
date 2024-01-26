@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize")
 
-const { DataTypes } = requiere("sequelize")
+const { DataTypes } = require("sequelize")
 
 module.exports = (sequelize) => {
     //Definimos modelo dendotro del objeto 
@@ -10,6 +10,10 @@ module.exports = (sequelize) => {
             defaultValue: Sequelize.UUIDV4,
             allowNull: false,
             primaryKey: true,
+
+        },
+        name:{
+            type:DataTypes.STRING,
 
         },
         songsId: {
